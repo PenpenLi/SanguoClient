@@ -8,11 +8,14 @@ public class PanelLogin : MonoBehaviour
 {
 	void Awake ()
 	{
-		Debug.Log ("[PanelLogin] Awake");
+		LogMgr.Log ("[PanelLogin] Awake");
+		// 把帳號密碼給塞進去
+		NGUIUtility.SetInputText ("Input_Account", "dnadan");
+		NGUIUtility.SetInputText ("Input_Password", "silveran");
 	}
 
-	void OnChildClick ()
+	void OnChildClick (object ChildName)
 	{
-		Debug.Log ("[PanelLogin] OnChildClick");
+		LogMgr.Log ("[PanelLogin] OnChildClick, Receive Child {0}", ChildName.ToString());
 	}
 }

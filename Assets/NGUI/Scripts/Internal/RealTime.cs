@@ -50,6 +50,9 @@ public class RealTime : MonoBehaviour
 
 	static void Spawn ()
 	{
+		// 2014/6/12 dandanshih 防止產生二個 _RealTime 物件
+		if (GameObject.Find ("_RealTime") != null)
+			return;
 		GameObject go = new GameObject("_RealTime");
 		DontDestroyOnLoad(go);
 		mInst = go.AddComponent<RealTime>();

@@ -9,9 +9,9 @@ public class ChildClick : MonoBehaviour
 {
 	void OnClick ()
 	{
-		Debug.Log ("[ChildClick] OnClick");
+		LogMgr.Log ("[ChildClick] {0} is OnClick", this.name);
 		// 把資料轉發給 Parent 去做處理
-		//SendMessage ("OnChildClick", this.gameObject.transform.parent.gameObject, SendMessageOptions.RequireReceiver);
-		this.gameObject.transform.parent.gameObject.SendMessage ("OnChildClick", this.name);
+		GameObject Parent = NGUIUtility.GetParent (this.gameObject);
+		Parent.SendMessage ("OnChildClick", this.name, SendMessageOptions.RequireReceiver);
 	}
 }

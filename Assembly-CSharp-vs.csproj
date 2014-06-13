@@ -172,6 +172,11 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Scripts\Tools\Module\ClientSaveMgr.cs" />
+     <Compile Include="Assets\Scripts\Tools\Module\LogMgr.cs" />
+     <Compile Include="Assets\Scripts\Tools\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Tools\SingletonUpdate.cs" />
+     <Compile Include="Assets\Scripts\Tools\UnityProperty.cs" />
      <Compile Include="Assets\Scripts\UI\ChildClick.cs" />
      <Compile Include="Assets\Scripts\UI\Login\PanelLogin.cs" />
      <Compile Include="Assets\Scripts\UI\NGUIUtility.cs" />
