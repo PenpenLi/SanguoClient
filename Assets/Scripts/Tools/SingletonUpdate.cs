@@ -11,5 +11,6 @@ public class SingletonUpdate
 	void Awake ()
 	{
 		// 應該要建表讀入才對
+
 	}
 }
