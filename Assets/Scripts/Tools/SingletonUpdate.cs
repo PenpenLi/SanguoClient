@@ -5,12 +5,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class SingletonUpdate
+public class SingletonUpdate : MonoBehaviour
 {
 	// 建立
 	void Awake ()
 	{
 		// 應該要建表讀入才對
+	}
 
+	void Update ()
+	{
+		// 呼叫該呼叫的 Update
+		ClientSaveMgr.Update ();
 	}
 }

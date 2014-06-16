@@ -9,9 +9,9 @@ using System.Collections;
 
 public class LogMgr
 {
-	public static void Log (object Msg, params object[] Args)
+	public static void Log (string Msg, params object[] Args)
 	{
 		string Result = string.Format (Msg.ToString(), Args);
-		Debug.Log (Msg);
+		Debug.Log (Result);
 	}
 }
